@@ -145,6 +145,46 @@ footer{border-top:1px solid #25211e;color:#827a71}
 }
 @media(max-width:390px){.nav{gap:8px}nav{gap:10px}.nav-cta{font-size:10px}.brand-name{font-size:12px}.hero-portrait{height:260px}}
 
+
+/* final detail pass: spacing, visual rhythm and touch targets */
+.hero .container{width:min(var(--max),calc(100% - 48px))}
+.hero-portrait{border-radius:3px 3px 34px 3px;overflow:hidden}
+.hero-portrait:before{border-radius:2px 2px 28px 2px}
+.hero-portrait img{object-fit:cover;object-position:center 18%}
+.hero h1{max-width:700px}
+.hero-actions .btn{min-width:155px}
+.section-head{position:relative}
+.text-link{white-space:nowrap}
+.feature-card{overflow:hidden}
+.feature-info .btn{align-self:flex-start}
+.media-card{position:relative}
+.media-card .poster{transition:filter .3s}
+.media-card:hover .poster{filter:saturate(1.13) brightness(1.08)}
+.media-meta span:last-child{font-weight:600}
+.contact-box{transition:border-color .2s,transform .2s}
+.contact-box:hover{border-color:#705738;transform:translateY(-2px)}
+.contact-url{word-break:break-word}
+@media(min-width:761px){
+ .hero-inner{padding-top:110px;padding-bottom:105px}
+ .hero-portrait{height:490px}
+ .section#works{padding-top:88px}
+ .featured .feature-art{min-height:390px}
+ .featured .feature-info{padding:44px}
+ .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+ .hero .container{width:calc(100% - 30px)}
+ .hero-portrait{border-radius:3px 3px 24px 3px}
+ .hero-portrait:before{border-radius:2px 2px 18px 2px}
+ .hero-actions .btn{min-width:0;flex:1}
+ .section-head{flex-direction:column;gap:12px}
+ .text-link{align-self:flex-start}
+ .featured .feature-art{min-height:255px}
+ .media-body{padding:22px}
+ .poster{height:240px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.media-card,.btn,.contact-box,.poster{transition:none}}
+
 </style>
 </head>
 <body>
@@ -176,7 +216,7 @@ footer{border-top:1px solid #25211e;color:#827a71}
 <a class="media-card" href="mano-yadet-nare-hosein.html" data-kind="video rowzeh"><div class="poster"><span class="poster-type">نماهنگ • روضه</span><div class="poster-word">منو یادت نره<small>HOSEIN PEIROVI</small></div></div><div class="media-body"><h3>منو یادت نره حسین</h3><p>🎙️ کربلایی حسین پیروی</p><div class="media-meta"><span>روضه و دلتنگی</span><span>مشاهده اثر ←</span></div></div></a>
 </div>
 </div></section>
-<div class="quote-band"><div class="container"><div class="arabic">السَّلَامُ عَلَیْکَ یَا أَبَا عَبْدِاللَّهِ</div><p>دل به نام حسین آرام می‌گیرد</p></div></div>
+<div class="quote-band"><div class="container"><div class="arabic">السَّلَامُ عَلَیْکَ یَا أَبَا عَبْدِاللَّهِ</div><p>آرشیو رسمی آثار و نغمه‌های کربلایی حسین پیروی</p></div></div>
 <section class="section" id="about"><div class="container about-grid">
 <div class="about-emblem"><span>هـ.پ</span></div>
 <div class="about-copy"><div class="section-kicker">ABOUT THE ARTIST</div><h2 class="section-title">درباره پایگاه رسمی</h2><p>این پایگاه با هدف گردآوری و انتشار آثار صوتی و تصویری کربلایی حسین پیروی راه‌اندازی شده است؛ فضایی برای دسترسی به مداحی‌ها، روضه‌ها، نماهنگ‌ها و اطلاعیه‌های مراسم، با حفظ نام عوامل و پدیدآورندگان هر اثر.</p><div class="about-points"><span>✦ آرشیو آثار</span><span>✦ اطلاع‌رسانی مراسم</span><span>✦ رسانه رسمی</span></div></div>
